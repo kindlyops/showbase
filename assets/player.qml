@@ -23,11 +23,16 @@ Window {
       onPressed: { anchorX = mouseX; anchorY = mouseY }
       onMouseXChanged: if (pressed) playerwindow.x += mouse.x-anchorX
       onMouseYChanged: if (pressed) playerwindow.y += mouse.y-anchorY
-      onDoubleClicked: {
-        if (playerwindow.visibility === Window.FullScreen) {
-          playerwindow.visibility = Window.AutomaticVisibility;
-        } else {
-          playerwindow.visibility = Window.FullScreen;
+      onDoubleClicked: slacker.restart()
+      Timer {
+        id: slacker
+        interval: 100; repeat: false
+        onTriggered: {
+          if (playerwindow.visibility === Window.FullScreen) {
+            playerwindow.visibility = Window.AutomaticVisibility;
+          } else {
+            playerwindow.visibility = Window.FullScreen;
+          }
         }
       }
     }
