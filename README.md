@@ -36,4 +36,29 @@ Not ready for production use.
 We are building this to be cross platform, from macOS laptops to Cloud GPU media
 workstations running windows to headless linux servers controlled via OSC.
 
-Core technology building blocks are Rust and Qt.
+Core technology building blocks are Rust, Qt, mpv.
+
+## Building
+
+1. Install Rust
+
+```bash
+brew install qt &&
+brew install cmake &&
+```
+1. `cargo run`
+
+* https://rust-qt.github.io/qt/
+* https://github.com/ParadoxSpiral/libmpv-rs
+* https://github.com/mpv-player/mpv
+
+## aware of, deferred for future consideration
+
+* https://github.com/rust-av/libav-rs
+* https://lib.rs/crates/ffav
+* OSC library
+
+## rejected
+
+* https://github.com/wang-bin/QtAV
+* https://github.com/garkimasera/vlc-rs
