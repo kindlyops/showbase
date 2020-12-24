@@ -9,6 +9,10 @@ This is a starter for [Gatsby](https://www.gatsbyjs.org/) websites using:
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Twin.Macro](https://github.com/ben-rogerson/twin.macro)
 
+## Brand Kit for Showbase.studio
+
+https://app.brandmark.io/v3/brand/B67C268569CD4AE69793937AE400DC5A
+
 ## Demo
 
 [Gatsby Typescript Tailwind Twin Styled-Component Starter](https://gatsby-typescript-tailwind-twin-styled-component-starter.netlify.app/)
