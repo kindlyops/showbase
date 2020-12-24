@@ -9,7 +9,7 @@ Window {
   width: 1280
   height: 720
   title: "ShowbasePlayer"
-  flags: Qt.Window | Qt.FramelessWindowHint
+  flags: Qt.Window | Qt.FramelessWindowHint | Qt.WindowFullscreenButtonHint
   Rectangle {
     anchors.top: parent.top
     width: parent.width
@@ -23,6 +23,13 @@ Window {
       onPressed: { anchorX = mouseX; anchorY = mouseY }
       onMouseXChanged: if (pressed) playerwindow.x += mouse.x-anchorX
       onMouseYChanged: if (pressed) playerwindow.y += mouse.y-anchorY
+      onDoubleClicked: {
+        if (playerwindow.visibility === Window.FullScreen) {
+          playerwindow.visibility = Window.AutomaticVisibility;
+        } else {
+          playerwindow.visibility = Window.FullScreen;
+        }
+      }
     }
   }
 }
