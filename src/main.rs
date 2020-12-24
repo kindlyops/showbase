@@ -7,7 +7,8 @@ use qt_qml::QQmlApplicationEngine;
 fn main() {
     QGuiApplication::init(|_| unsafe {
         q_init_resource!("resources");
-        let _engine = QQmlApplicationEngine::from_q_string(&qs("qrc:/main.qml"));
+        let engine = QQmlApplicationEngine::from_q_string(&qs("qrc:/main.qml"));
+        engine.load_q_string(&qs("qrc:/player.qml"));
         QGuiApplication::exec()
     })
 }

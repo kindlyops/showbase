@@ -55,6 +55,7 @@ brew install cmake &&
 ## aware of, deferred for future consideration
 
 * https://github.com/rust-av/libav-rs
+* https://github.com/johnboiles/coremediaio-dal-minimal-example
 * https://lib.rs/crates/ffav
 * OSC library
 
@@ -62,3 +63,8 @@ brew install cmake &&
 
 * https://github.com/wang-bin/QtAV
 * https://github.com/garkimasera/vlc-rs
+
+## debug tools
+
+* https://github.com/lvsti/Cameo
+* https://github.com/bavc/qctools

@@ -3,6 +3,7 @@ import QtQuick.Window 2.2
 import QtQuick.Layouts 1.3
 
 Window {
+    objectName: "wnd1"
     visible: true
     width: 300
     height: 300
@@ -17,3 +18,4 @@ Window {
         }
     }
 }
+
