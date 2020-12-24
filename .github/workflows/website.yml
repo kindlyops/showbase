@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - uses: actions/checkout@v2
       - uses: enriikke/gatsby-gh-pages-action@v2
