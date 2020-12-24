@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
 import tw from 'twin.macro'; // eslint-disable-line import/no-extraneous-dependencies
 import {
   GatsbyIcon,
@@ -11,13 +12,14 @@ import {
 } from '../components';
 import Theme from '../components/theme';
 import Button from '../components/Button';
+import logo from "./logo.png";
 
 const Wrapper = styled.div`
   ${tw`flex flex-col items-center justify-center h-screen`}
 `;
 
 const Main = tw.div`
-  p-6 bg-gray-100 rounded-lg shadow-2xl
+  p-6 bg-gray-100
 `;
 
 const Heading = tw.h1`
@@ -55,36 +57,20 @@ const Index = () => (
         tw`flex flex-col items-center justify-center h-screen`,
         // Combine regular css and Tailwind styles within backticks
         css`
-          background: #542c85;
+          background: #f5f5f5;
         `
       ]}
     >
       <Wrapper>
         <Main>
-          <Logos>
-            <GatsbyIcon />
-            <TypescriptIcon />
-            <StyledComponentsIcon />
-            <TailwindIcon />
-            <TwinIcon />
-          </Logos>
-          <Heading>Hello, world!</Heading>
+          <img src={logo} alt="Logo" />
+          <Heading>ShowBase</Heading>
           <Text>
-            Welcome to the Gatsby + Tailwind CSS + Styled-Components + Typescript Starter.
+            Welcome to ShowBase!
           </Text>
-          <div className="flex justify-between">
-            <Button isPrimary>Primary</Button>
-            <Button isSecondary>Secondary</Button>
-            <Button isPrimary isSmall>
-              Small Primary
-            </Button>
-            <Button isSecondary isSmall>
-              Small Secondary
-            </Button>
-          </div>
           <Footer>
             <a
-              href="https://github.com/DevHausStudio/Gatsby-Typescript-Tailwind-Twin-Styled-Component-Starter"
+              href="https://github.com/kindlyops/showbase"
               target="_blank"
               rel="noopener noreferrer"
             >
