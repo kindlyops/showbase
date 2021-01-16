@@ -52,7 +52,22 @@ brew install cmake &&
 * https://github.com/ParadoxSpiral/libmpv-rs
 * https://github.com/mpv-player/mpv
 
-## aware of, deferred for future consideration
+
+## materials showing how the parts connect
+
+* https://www.kdab.com/development-resources/kdab-qt-world-summit-2019/
+* https://www.youtube.com/watch?v=SgDTNB20_3I
+* https://www.kdab.com/wp-content/uploads/stories/optimizing-qq2-rendering.pdf
+
+* https://github.com/mpv-player/mpv-examples/blob/master/libmpv/qml/main.qml
+* https://github.com/wangwenx190/libmpv-qtquick-plugin
+* https://github.com/wangwenx190/libmpv-qtquick-plugin/blob/master/imports/wangwenx190/QuickMpv/MpvPlayer.qml
+
+* https://github.com/woboq/qmetaobject-rs
+* https://www.youtube.com/watch?v=6pcOhCWLd_U
+
+* https://www.kdab.com/integrate-opengl-code-qt-quick-2-applications-part-2/
+* https://www.youtube.com/watch?v=fdlU1zVA-Po
 
 * https://github.com/rust-av/libav-rs
 * https://github.com/johnboiles/coremediaio-dal-minimal-example

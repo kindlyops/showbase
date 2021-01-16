@@ -466,6 +466,7 @@ name = "showbase"
 version = "0.1.0"
 dependencies = [
  "cpp_core",
+ "libc",
  "qt_core",
  "qt_gui",
  "qt_qml",
